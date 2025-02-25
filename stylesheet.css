@@ -97,11 +97,140 @@
     transition: 1s;
 }
 
+@media screen and (max-width:2180px) and (min-width:1900px) {
+    .box1{
+        height: 25vh;
+    }
+    .box1 img{
+        width: 230px;
+        height: 230px;
+    }
+    .navbar h1{
+        font-size: 40px;
+    }
+    .icondiv{
+        margin-top: 25px;
+    }
+    .icondiv i{
+        font-size: 35px;
+        margin-right: 15px;
+        padding: 11px 15px 11px 15px;
+    }
+    .navA{
+        height: 40vh;
+    }
+    .navA a{
+        font-size: 40px;
+    }
+    .a{
+        font-size: 30px;
+        padding-bottom: 10px;
+    }
+}
+
+@media screen and (max-width:1900px) and (min-width:1700px) {
+    .box1{
+        height: 25vh;
+    }
+    .box1 img{
+        width: 220px;
+        height: 220px;
+    }
+    .navbar h1{
+        font-size: 35px;
+    }
+    .icondiv{
+        margin-top: 22px;
+    }
+    .icondiv i{
+        font-size: 32px;
+        margin-right: 5px;
+        padding: 11px 15px 11px 15px;
+    }
+    .navA{
+        height: 39vh;
+    }
+    .navA a{
+        font-size: 40px;
+    }
+    .a{
+        font-size: 30px;
+        padding-bottom: 10px;
+    }
+}
+
+@media screen and (max-width:1700px) and (min-width:1500px) {
+    .box1{
+        height: 25vh;
+    }
+    .box1 img{
+        width: 200px;
+        height: 200px;
+    }
+    .navbar h1{
+        font-size: 35px;
+    }
+    .icondiv{
+        margin-top: 35px;
+    }
+    .icondiv i{
+        font-size: 25px;
+        margin-right: 0px;
+        padding: 11px 15px 11px 15px;
+    }
+    .navA{
+        height: 41vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .navA a{
+        font-size: 35px;
+    }
+    .a{
+        font-size: 27px;
+        padding-bottom: 10px;
+    }
+}
+
+@media screen and (max-width:1500px) and (min-width:1370px) {
+    .box1{
+        height: 25vh;
+    }
+    .box1 img{
+        width: 200px;
+        height: 200px;
+    }
+    .navbar h1{
+        font-size: 40px;
+    }
+    .icondiv{
+        margin-top: 25px;
+    }
+    .icondiv i{
+        font-size: 20px;
+        margin-right: 0px;
+        padding: 11px 13px 11px 13px;
+    }
+    .navA{
+        height: 43vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .navA a{
+        font-size: 30px;
+    }
+    .a{
+        font-size: 30px;
+        padding-bottom: 10px;
+        margin-left: 25%;
+    }
+}
+
 @media screen and (max-width:980px) and (min-width:320px) {
     .navA {
         position: fixed;
         background-color: #040b14;
-        width: 26%;
+        width: 100%%;
         height: 40vh;
         top: 80px;
         left: 2%;
@@ -192,7 +321,53 @@
     }
 }
 
-@media screen and (max-width:980px) and (min-width:760px) {
+@media screen and (max-width:2180px) and (min-width:1900px) {
+    .home{
+        background-position: 10px 45%;    }
+    .home h2{
+        font-size: 70px;
+        left: 12%;
+    }
+    .home h1{
+        font-size: 100px;
+        left: 12%;
+    }
+}
+
+@media screen and (max-width:1900px) and (min-width:1700px) {
+    .home h2{
+        font-size: 60px;
+        left: 12%;
+    }
+    .home h1{
+        font-size: 90px;
+        left: 12%;
+    }
+}
+
+@media screen and (max-width:1700px) and (min-width:1500px) {
+    .home h2{
+        font-size: 55px;
+        left: 12%;
+    }
+    .home h1{
+        font-size: 80px;
+        left: 12%;
+    }
+}
+
+@media screen and (max-width:1500px) and (min-width:1370px) {
+    .home h2{
+        font-size: 55px;
+        left: 12%;
+    }
+    .home h1{
+        font-size: 80px;
+        left: 12%;
+    }
+}
+
+@media screen and (max-width:980px) and (min-width:700px) {
     .home {
         width: 100%;
         margin-left: 0px;
@@ -204,8 +379,9 @@
     }
 
     .navA {
-        height: 52vh;
-        width: 23%;
+        height: 35vh;
+        width: 30%;
+        padding-left: 50px;
     }
 
     .navA a {
@@ -213,17 +389,17 @@
     }
 
     .home h2 {
-        font-size: 35px;
+        font-size: 50px;
         left: 7%;
     }
 
     .home h1 {
-        font-size: 50px;
+        font-size: 65px;
         left: 7%;
     }
 }
 
-@media screen and (max-width:760px) and (min-width:500px) {
+@media screen and (max-width:700px) and (min-width:500px) {
     .home {
         width: 100%;
         margin-left: 0px;
@@ -235,7 +411,7 @@
     }
 
     .navA {
-        height: 52vh;
+        height: 35vh;
         width: 40%;
         padding-left: 10%;
     }
@@ -245,12 +421,12 @@
     }
 
     .home h2 {
-        font-size: 35px;
+        font-size: 50px;
         left: 7%;
     }
 
     .home h1 {
-        font-size: 50px;
+        font-size: 75px;
         left: 7%;
     }
 }
@@ -258,9 +434,10 @@
 @media screen and (max-width:500px) and (min-width:320px) {
     .home {
         width: 100%;
+        height: 75vh;
         margin-left: 0px;
-        background-position:0 100%;
-        background-size: 530px;
+        background-position:0 0%;
+        background-size: 563px;
     }
 
     #aacha {
@@ -268,7 +445,7 @@
     }
 
     .navA {
-        height: 52vh;
+        height: 34vh;
         width: 95%;
         padding-left: 30%;
     }
@@ -279,12 +456,14 @@
 
     .home h2 {
         font-size: 35px;
-        left: 7%;
+        left: 6%;
+        top: 30%;
     }
 
     .home h1 {
         font-size: 50px;
-        left: 7%;
+        left: 6%;
+        top: 35%;
     }
 }
 
@@ -327,7 +506,6 @@
 
 .aboutleft {
     width: 30%;
-    /* height: 70vh; */
     display: flex;
     justify-content: center;
     align-items: baseline;
@@ -336,7 +514,6 @@
 
 .aboutright {
     width: 70%;
-    /* min-height: 55vh; */
     background-color: whitesmoke;
     padding: 4% 10px 10px 10px;
 }
@@ -369,55 +546,214 @@ table tr td {
     height: 7vh;
 }
 
-@media screen and (max-width:980px) and (min-width:760px) {
-    .about {
-        margin-left: 0;
+table tr td a{
+    color: black;
+    text-decoration: none;
+}
+
+@media screen and (max-width:2180px) and (min-width:1900px) {
+    .ah1{
+        font-size: 60px;
+    }
+    .ap2{
+        font-size: 25px;
+        margin-top: 10px;
+    }
+    .aboutleft img{
+        width: 450px;
+        height: 470px;
+    }
+    .aboutright{
+        padding-top: 1%;
+    }
+    .aboutright p{
+        font-size: 25px;
+    }
+    .aflex{
         width: 100%;
-        min-height: 170vh;
-        padding: 20px;
     }
-
-    .aboutflex {
-        flex-direction: column;
-        padding: 1px;
-        height: 115vh;
-        align-items: center;
+    table tr td{
+        font-size: 26px;
     }
-
-    .aboutleft {
-        width: 100%;
-        margin-top: 15%;
+    .aboutflex{
+        height: 57vh;
     }
-
-    .aboutright {
-        width: 100%;
-        min-height: 70vh;
-        margin-top: 20px;
-    }
-
-    .aboutleft img {
-        width: 400px;
+    .about{
+        min-height: 90vh;
     }
 }
 
-@media screen and (max-width:760px) and (min-width:500px) {
+@media screen and (max-width:1900px) and (min-width:1700px) {
+    .ah1{
+        font-size: 60px;
+    }
+    .ap2{
+        font-size: 22px;
+        margin-top: 10px;
+    }
+    .aboutleft{
+        width: 40%;
+    }
+    .aboutleft img{
+        width: 500px;
+        height: 470px;
+    }
+    .aboutright{
+        padding-top: 1%;
+        padding-left: 20px;
+    }
+    .aboutright p{
+        font-size: 22px;
+        margin-left: 7px;
+    }
+    .aflex{
+        width: 100%;
+    }
+    table tr td{
+        font-size: 23px;
+    }
+    .aboutflex{
+        height: 57vh;
+    }
+    .about{
+        min-height: 85vh;
+    }
+    .about h1{
+        font-size:40px;
+        margin-left: 7px;
+    }
+}
+
+@media screen and (max-width:1700px) and (min-width:1500px) {
+    .ah1{
+        font-size: 60px;
+    }
+    .ap2{
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    .aboutleft{
+        width: 40%;
+    }
+    .aboutleft img{
+        width: 450px;
+        height: 470px;
+    }
+    .aboutright{
+        padding-top: 1%;
+        padding-left: 20px;
+    }
+    .aboutright p{
+        font-size: 20px;
+        margin-left: 7px;
+    }
+    .aflex{
+        width: 100%;
+    }
+    table tr td{
+        font-size: 22px;
+    }
+    .aboutflex{
+        height: 57vh;
+    }
+    .about{
+        min-height: 85vh;
+    }
+    .about h1{
+        font-size:40px;
+        margin-left: 7px;
+    }
+}
+
+@media screen and (max-width:1500px) and (min-width:1370px) {
+    .ah1{
+        font-size: 60px;
+    }
+    .ap2{
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    .aboutleft{
+        width: 40%;
+    }
+    .aboutleft img{
+        width: 500px;
+        height: 470px;
+    }
+    .aboutright{
+        padding-top: 1%;
+        padding-left: 20px;
+    }
+    .aboutright p{
+        font-size: 20px;
+        margin-left: 7px;
+    }
+    .aflex{
+        width: 100%;
+    }
+    table tr td{
+        font-size: 20px;
+    }
+    .aboutflex{
+        height: 57vh;
+    }
+    .about{
+        min-height: 85vh;
+    }
+    .about h1{
+        font-size:40px;
+        margin-left: 7px;
+    }
+}
+
+@media screen and (max-width:980px) and (min-width:700px) {
     .about {
         margin-left: 0;
         width: 100%;
-        min-height: 180vh;
+        min-height: 100vh;
         padding: 20px;
     }
 
     .aboutflex {
         flex-direction: column;
         padding: 1px;
-        height: 115vh;
+        height: 100vh;
         align-items: center;
     }
 
     .aboutleft {
         width: 100%;
-        margin-top: 25%;
+    }
+
+    .aboutright {
+        width: 100%;
+        min-height: 45vh;
+        margin-top: 20px;
+    }
+
+    .aboutleft img {
+        width: 550px;
+        height: 500px;
+    }
+}
+
+@media screen and (max-width:700px) and (min-width:500px) {
+    .about {
+        margin-left: 0;
+        width: 100%;
+        min-height: 100vh;
+        padding: 20px;
+    }
+
+    .aboutflex {
+        flex-direction: column;
+        padding: 1px;
+        height: 100vh;
+        align-items: center;
+    }
+
+    .aboutleft {
+        width: 100%;
     }
 
     .aboutright {
@@ -426,7 +762,8 @@ table tr td {
     }
 
     .aboutleft img {
-        width: 400px;
+        width: 500px;
+        height: 500px;
     }
 }
 
@@ -434,27 +771,23 @@ table tr td {
     .about {
         margin-left: 0;
         width: 100%;
-        min-height: 180vh;
+        min-height: 100vh;
         padding: 20px;
-        border-bottom: 2px solid black;
     }
 
     .aboutflex {
         flex-direction: column;
         padding: 1px;
-        height: 115vh;
+        height: 90vh;
         align-items: center;
     }
 
     .aboutleft {
         width: 100%;
-        margin-top: 35%;
     }
 
     .aboutright {
         width: 100%;
-        min-height: 60vh;
-        margin-top: 20px;
     }
 
     .aboutleft img {
@@ -464,7 +797,6 @@ table tr td {
     .aflex {
         width: 100%;
         gap: 20px;
-        /* flex-direction: column; */
     }
 
     .ap2 {
@@ -512,7 +844,6 @@ table tr td {
 
 .skildiv {
     width: 100%;
-    min-height: 90vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -521,7 +852,6 @@ table tr td {
 
 .skillbox1 {
     width: 60%;
-    height: 85vh;
     padding: 20px;
 }
 
@@ -736,36 +1066,78 @@ table tr td {
     }
 }
 
-@media screen and (max-width:980px) and (min-width:760px) {
-    .skill {
-        width: 100%;
-        margin-left: 0px;
-        padding-left: 20px;
+@media screen and (max-width:2180px) and (min-width:1900px) {
+    .h1{
+        font-size: 50px;
     }
-
-    .skildiv {
-        padding-left: 10px;
-        flex-direction: column-reverse;
+    .skillbox1 h1{
+        font-size: 50px;
     }
-
-    .skillbox1 {
-        width: 100%;
+    .skillbox2 img{
+        width: 600px;
+        height: 670px;
     }
-
-    .skillbox2 {
-        width: 100%;
-    }
-
-    .skillbox2 img {
-        border-radius: 20px;
-    }
-
-    .sdiv1 h3 {
-        margin-bottom: 1px;
+    .sdiv1 h3{
+        font-size: 25px;
+        margin-top: 8px;
     }
 }
 
-@media screen and (max-width:760px) and (min-width:500px) {
+@media screen and (max-width:1900px) and (min-width:1700px) {
+    .h1{
+        font-size: 45px;
+    }
+    .skillbox1 h1{
+        font-size: 45px;
+    }
+    .skillbox2 img{
+        width: 530px;
+        height: 650px;
+    }
+    .sdiv1 h3{
+        font-size: 25px;
+        margin-top: 8px;
+    }
+}
+
+@media screen and (max-width:1700px) and (min-width:1500px) {
+    .h1{
+        font-size: 45px;
+    }
+    .skillbox1 h1{
+        font-size: 45px;
+    }
+    .skillbox2 img{
+        width: 480px;
+        height: 620px;
+        margin-left: 15px;
+    }
+    .sdiv1 h3{
+        font-size: 25px;
+        margin-top: 8px;
+    }
+}
+
+@media screen and (max-width:1500px) and (min-width:1370px) {
+    .h1{
+        font-size: 45px;
+    }
+    .skillbox1 h1{
+        font-size: 45px;
+    }
+    .skillbox2 img{
+        width: 430px;
+        height: 570px;
+        margin-left: 15px;
+        margin-top: 25%;
+    }
+    .sdiv1 h3{
+        font-size: 25px;
+        margin-top: 8px;
+    }
+}
+
+@media screen and (max-width:980px) and (min-width:700px) {
     .skill {
         width: 100%;
         margin-left: 0px;
@@ -783,6 +1155,7 @@ table tr td {
 
     .skillbox2 {
         width: 100%;
+        height: 55vh;
     }
 
     .skillbox2 img {
@@ -790,7 +1163,40 @@ table tr td {
     }
 
     .sdiv1 h3 {
-        margin-bottom: 1px;
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width:700px) and (min-width:500px) {
+    .skill {
+        width: 100%;
+        margin-left: 0px;
+        padding-left: 20px;
+    }
+
+    .skildiv {
+        padding-left: 10px;
+        flex-direction: column-reverse;
+    }
+
+    .skillbox1 {
+        width: 100%;
+    }
+
+    .skillbox2 {
+        width: 100%;
+        height: 55vh;
+    }
+
+    .skillbox2 img {
+        border-radius: 20px;
+    }
+
+    .sdiv1 h3 {
+        margin: 5px 0 6px 10px;
+    }
+    .sdiv1{
+        height: 5vh;
     }
 }
 
@@ -808,11 +1214,13 @@ table tr td {
 
     .skillbox1 {
         width: 100%;
+        height: 60vh;
         padding: 4px;
     }
 
     .skillbox2 {
         width: 100%;
+        height: 50vh;
         padding: 0 10px 0 0;
     }
 
@@ -822,9 +1230,13 @@ table tr td {
 
     .sdiv1 h3 {
         margin-bottom: 1px;
+        margin-top: 10px;
     }
     .aboutright h1{
         font-size: 25px;
+    }
+    .sdiv1{
+        height: 5vh;
     }
 
 }
@@ -862,10 +1274,6 @@ table tr td {
 
 .inbox input {
     display: none;
-}
-
-.inbox label {
-    /* color: black; */
 }
 
 .h2 {
@@ -1043,6 +1451,81 @@ table tr td {
     bottom: 0%;
 }
 
+@media screen and (max-width:2180px) and (min-width:1900px) {
+    .h2{
+        font-size: 50px;
+        margin-left: 4%;
+    }
+    .prolable span{
+        font-size: 30px;
+    }
+    .xtx1{
+        width: 500px;
+        height: 310px;
+    }
+    .xtx1 img{
+        width: 500px;
+        height: 310px;
+    }
+    .hov{
+        width: 500px;
+        height: 145px;
+        padding-top: 15px;
+    }
+}
+
+@media screen and (max-width:1900px) and (min-width:1700px) {
+    .h2{
+        font-size: 45px;
+        margin-left: 4%;
+    }
+    .prolable span{
+        font-size: 30px;
+    }
+    .xtx1{
+        width: 565px;
+        height: 310px;
+    }
+    .xtx1 img{
+        width: 565px;
+        height: 310px;
+    }
+    .hov{
+        width: 565px;
+        height: 145px;
+        padding-top: 15px;
+    }
+}
+
+@media screen and (max-width:1700px) and (min-width:1500px) {
+    .h2{
+        font-size: 45px;
+        margin-left: 4%;
+    }
+    .prolable span{
+        font-size: 30px;
+    }
+    .xtx1{
+        width: 565px;
+        height: 310px;
+    }
+    .xtx1 img{
+        width: 565px;
+        height: 310px;
+    }
+    .hov{
+        width: 565px;
+        height: 145px;
+        padding-top: 15px;
+    }
+}
+
+@media screen and (max-width:1500px) and (min-width:1370px) {
+    .hov{
+        height: 130px;
+    }
+}
+
 @media screen and (max-width:980px) and (min-width:860px) {
     .project{
         width: 100%;
@@ -1095,15 +1578,15 @@ table tr td {
         margin: 0;
     }
     .xtx1{
-        width: 320px;
+        width: 430px;
         height: 210px;
     }
     .hov{
-        width: 320px;
+        width: 430px;
         bottom: -60%;
     }
     .xtx1 img{
-        width: 320px;
+        width: 430px;
         height: 210px;
         object-fit: cover;
     }
@@ -1137,6 +1620,7 @@ table tr td {
     }
     .lableflex{
         width:95%;
+        height: 5vh;
     }
     .prolable span{
         font-size: 14px;
@@ -1218,33 +1702,39 @@ table tr td {
     }
 }
 
-@media screen and (max-width:980px) and (min-width:780px) {
-    .contact{
-        width: 100%;
-        margin: 0;
-    }
-}
-
-@media screen and (max-width:780px) and (min-width:630px) {
-    .contact{
-        width: 100%;
-        margin: 0;
-    }
-    .emailflex{
-        width: 60%;
-    }
-}
-
-@media screen and (max-width:630px) and (min-width:320px) {
+@media screen and (max-width:980px) and (min-width:700px) {
     .contact{
         width: 100%;
         margin: 0;
         padding-top: 30%;
     }
     .emailflex{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:700px) and (min-width:500px) {
+    .contact{
+        width: 100%;
+        height: 60vh;
+        margin: 0;
+        padding-top: 35%;
+    }
+    .emailflex{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:500px) and (min-width:320px) {
+    .contact{
+        width: 100%;
+        margin: 0;
+        padding-top: 50%;
+    }
+    .emailflex{
         width: 80%;
         padding: 10px;
-        height: 9vh;
+        height: 6vh;
     }
     .contact p{
         font-size: 14px;
