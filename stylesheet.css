@@ -3,82 +3,28 @@
     padding: 0;
     box-sizing: border-box;
     color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* *======================* */
-/* <!-------navbar--------> */
-
-.navbar {
-    width: 23%;
+.navbar{
+    width: 16%;
     min-height: 100vh;
-    background-color: #040b14;
-    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    row-gap: 20px;
+    padding-left: 10px;
     position: fixed;
     z-index: 999;
 }
 
-.box1 {
+.navA{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 15px;
-}
-
-.box1 img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-}
-
-.navbar h1 {
-    text-align: center;
-    margin-top: 10px;
-    font-size: 27px;
-}
-
-.icondiv {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    margin-top: 18px;
-}
-
-.icondiv i {
-    background-color: gray;
-    padding: 10px 12px 10px 12px;
-    border-radius: 50%;
-    font-size: 15px;
-    transition: 1s;
-}
-
-.icondiv i:hover {
-    background-color: lightseagreen;
-    transform: translateY(-10px);
-}
-
-.navA {
-    margin: 50px 0 20px 23%
-}
-
-.navA a {
-    text-decoration: none;
-    font-size: 24px;
-}
-
-.a {
-    margin: 15px 0 0 30%;
-    font-size: 20px;
-    text-decoration: none;
-    background-color: lightseagreen;
-    padding: 7px 20px 7px 20px;
-    border-radius: 20px;
-    font-weight: bold;
-}
-
-.navA a:hover {
-    color: lightseagreen;
+    flex-direction: column;
+    row-gap: 20px;
 }
 
 .navbar input {
@@ -97,214 +43,120 @@
     transition: 1s;
 }
 
-@media screen and (max-width:2180px) and (min-width:1900px) {
-    .box1{
-        height: 25vh;
-    }
-    .box1 img{
-        width: 230px;
-        height: 230px;
-    }
-    .navbar h1{
-        font-size: 40px;
-    }
-    .icondiv{
-        margin-top: 25px;
-    }
-    .icondiv i{
-        font-size: 35px;
-        margin-right: 15px;
-        padding: 11px 15px 11px 15px;
-    }
-    .navA{
-        height: 40vh;
-    }
-    .navA a{
-        font-size: 40px;
-    }
-    .a{
-        font-size: 30px;
-        padding-bottom: 10px;
-    }
+.box{
+    width: 70px;
+    height: 8vh;
+    border-radius: 50px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+    overflow: hidden;
+    transition:  0.9s;
 }
 
-@media screen and (max-width:1900px) and (min-width:1700px) {
-    .box1{
-        height: 25vh;
-    }
-    .box1 img{
-        width: 220px;
-        height: 220px;
-    }
-    .navbar h1{
-        font-size: 35px;
-    }
-    .icondiv{
-        margin-top: 22px;
-    }
-    .icondiv i{
-        font-size: 32px;
-        margin-right: 5px;
-        padding: 11px 15px 11px 15px;
-    }
-    .navA{
-        height: 39vh;
-    }
-    .navA a{
-        font-size: 40px;
-    }
-    .a{
-        font-size: 30px;
-        padding-bottom: 10px;
-    }
+.box:hover{
+    width: 200px;
 }
 
-@media screen and (max-width:1700px) and (min-width:1500px) {
-    .box1{
-        height: 25vh;
-    }
-    .box1 img{
-        width: 200px;
-        height: 200px;
-    }
-    .navbar h1{
-        font-size: 35px;
-    }
-    .icondiv{
-        margin-top: 35px;
-    }
-    .icondiv i{
-        font-size: 25px;
-        margin-right: 0px;
-        padding: 11px 15px 11px 15px;
-    }
-    .navA{
-        height: 41vh;
-        display: flex;
-        flex-direction: column;
-    }
-    .navA a{
-        font-size: 35px;
-    }
-    .a{
-        font-size: 27px;
-        padding-bottom: 10px;
-    }
+.box:hover.box i{
+    background-color: black;
+    color: red;
 }
 
-@media screen and (max-width:1500px) and (min-width:1370px) {
-    .box1{
-        height: 25vh;
-    }
-    .box1 img{
-        width: 200px;
-        height: 200px;
-    }
-    .navbar h1{
-        font-size: 40px;
-    }
-    .icondiv{
-        margin-top: 25px;
-    }
-    .icondiv i{
-        font-size: 20px;
-        margin-right: 0px;
-        padding: 11px 13px 11px 13px;
-    }
-    .navA{
-        height: 43vh;
-        display: flex;
-        flex-direction: column;
-    }
-    .navA a{
-        font-size: 30px;
-    }
-    .a{
-        font-size: 30px;
-        padding-bottom: 10px;
-        margin-left: 25%;
-    }
+.box h2{
+    font-size: 20px;
+}
+
+.box i{
+    font-size: 25px;
+    background-color: black;
+    padding: 10px;
+    border-radius: 50%;
+    transition: 1s;
+    color: white;
+}
+
+.box a{
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 900;
 }
 
 @media screen and (max-width:980px) and (min-width:320px) {
     .navA {
         position: fixed;
-        background-color: #040b14;
-        width: 100%%;
-        height: 40vh;
-        top: 80px;
-        left: 2%;
+        background-color: gray;
+        width: 100%;
+        height: 70vh;
+        top: 11%;
+        left: 0%;
         padding: 30px 20px;
         border-radius: 10px;
         margin: 0;
         transition: 0.4s;
         z-index: 999;
+        padding-left: 0px;
     }
 
     #aacha {
         display: block;
         margin-top: 15px;
-        color: white;
+        color: black;
         z-index: 999;
+        font-size: 40px;
     }
-
-    .box1 {
-        display: none;
+    .box{
+        width: 175px;
     }
-
-    .navbar h1 {
-        display: none;
+    .box h2{
+        color: white;
     }
-
-    .icondiv {
-        display: none;
+    .box i{
+        color: white;
+        font-size: 18px;
     }
-
-    .a {
-        display: none;
-    }
-
-    .navbar {
+    .navbar{
         display: contents;
     }
-
-    .navA a {
-        font-size: 35px;
-    }
 }
 
-/* ===================================== */
-/* <!----------homediv---------------> */
+/* ======================================== */
+/* <!------------home------div-------------> */
 
-.home {
-    width: 80%;
+.home{
+    width: 100%;
     height: 100vh;
-    margin-left: 20%;
-    background-image: url(./images/aacha2x.jpg);
+    background-image: url(./images/img1.png);
     background-repeat: no-repeat;
-    background-position: 0 50%;
-    background-size: cover;
-    position: relative;
+    background-size: 120%;
+    background-position: 100% 100%;
 }
 
-.home h2 {
-    position: absolute;
-    top: 32%;
-    left: 100px;
-    font-size: 37px;
+.homewhite{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.582);
+    padding-left: 20%;
+    padding-top: 1px;
 }
 
-.home h1 {
-    font-size: 65px;
-    position: absolute;
-    top: 40%;
-    left: 100px;
+.homewhite h2{
+    margin-top: 14%;
+    font-size: 45px;
+    color: white;
 }
 
-.home h1 span {
-    transform: translate(3%, 0%);
+.homewhite h1{
+    font-size: 70px;
+    color: white;
+}
+
+.home span{
+    transform: translate(3%,0%);
     color: transparent;
-    background-image: linear-gradient(#fff, #fff);
+    background-image: linear-gradient(yellow , orange);
     background-repeat: no-repeat;
     -webkit-background-clip: text;
     background-position: -700px 0;
@@ -312,1366 +164,978 @@
 }
 
 @keyframes type {
-    0% {
+    0%{
         background-position: -700px 0;
     }
-
-    100% {
+    100%{
         background-position: 0 0;
     }
 }
 
-@media screen and (max-width:2180px) and (min-width:1900px) {
-    .home{
-        background-position: 10px 45%;    }
-    .home h2{
-        font-size: 70px;
-        left: 12%;
-    }
-    .home h1{
-        font-size: 100px;
-        left: 12%;
-    }
+.home button a{
+    text-decoration: none;
+    font-weight: 800;
 }
 
-@media screen and (max-width:1900px) and (min-width:1700px) {
-    .home h2{
-        font-size: 60px;
-        left: 12%;
-    }
-    .home h1{
-        font-size: 90px;
-        left: 12%;
-    }
+.homewhite i{
+    background-color: black;
+    padding: 10px 11px 10px 11px;
+    margin-top: 3%;
+    margin-right: 20px;
+    font-size: 19px;
+    border-radius: 50%;
+    transition: 0.9s;
 }
 
-@media screen and (max-width:1700px) and (min-width:1500px) {
-    .home h2{
-        font-size: 55px;
-        left: 12%;
-    }
-    .home h1{
-        font-size: 80px;
-        left: 12%;
-    }
-}
-
-@media screen and (max-width:1500px) and (min-width:1370px) {
-    .home h2{
-        font-size: 55px;
-        left: 12%;
-    }
-    .home h1{
-        font-size: 80px;
-        left: 12%;
-    }
+.homewhite i:hover{
+    transform: translateY(-10px);
+    background-color: lightseagreen;
 }
 
 @media screen and (max-width:980px) and (min-width:700px) {
-    .home {
-        width: 100%;
-        margin-left: 0px;
-        background-position: 0 48%;
+    .homewhite{
+        padding-left: 7%;
     }
-
-    #aacha {
-        font-size: 30px;
+    .home{
+        background-size: cover;
     }
-
-    .navA {
-        height: 35vh;
-        width: 30%;
-        padding-left: 50px;
+    .home h2{
+        margin-top: 20%;
+        font-size: 40px;
     }
-
-    .navA a {
-        font-size: 25px;
-    }
-
-    .home h2 {
-        font-size: 50px;
-        left: 7%;
-    }
-
-    .home h1 {
-        font-size: 65px;
-        left: 7%;
+    .homewhite h1{
+        font-size: 63px;
     }
 }
 
 @media screen and (max-width:700px) and (min-width:500px) {
-    .home {
-        width: 100%;
-        margin-left: 0px;
-        background-position: 0 70%;
+    .homewhite{
+        padding-left: 7%;
     }
-
-    #aacha {
-        font-size: 30px;
+    .home{
+        background-size: cover;
     }
-
-    .navA {
-        height: 35vh;
-        width: 40%;
-        padding-left: 10%;
+    .home h2{
+        margin-top: 26%;
+        font-size: 37px;
     }
-
-    .navA a {
-        font-size: 25px;
-    }
-
-    .home h2 {
-        font-size: 50px;
-        left: 7%;
-    }
-
-    .home h1 {
-        font-size: 75px;
-        left: 7%;
+    .homewhite h1{
+        font-size: 55px;
+        margin-top: 10px;
     }
 }
 
-@media screen and (max-width:500px) and (min-width:320px) {
-    .home {
-        width: 100%;
-        height: 75vh;
-        margin-left: 0px;
-        background-position:0 0%;
-        background-size: 563px;
+@media screen and (max-width:500px) and (min-width:400px) {
+    .homewhite{
+        padding-left: 7%;
     }
-
-    #aacha {
-        font-size: 30px;
+    .home{
+        background-size: cover;
     }
-
-    .navA {
-        height: 34vh;
-        width: 95%;
-        padding-left: 30%;
+    .home h2{
+        margin-top: 38%;
+        font-size: 27px;
     }
-
-    .navA a {
-        font-size: 25px;
-    }
-
-    .home h2 {
-        font-size: 35px;
-        left: 6%;
-        top: 30%;
-    }
-
-    .home h1 {
+    .homewhite h1{
         font-size: 50px;
-        left: 6%;
-        top: 35%;
+        margin-top: 10px;
     }
 }
 
-/* ============================ */
-/* <!-------------aboutdiv--------> */
+@media screen and (max-width:400px) and (min-width:320px) {
+    .homewhite{
+        padding-left: 7%;
+    }
+    .home{
+        background-size: cover;
+    }
+    .home h2{
+        margin-top: 50%;
+        font-size: 26px;
+    }
+    .homewhite h1{
+        font-size: 45px;
+        margin-top: 10px;
+    }
+    .homewhite i{
+        font-size: 15px;
+        margin-top: 20px;
+    }
+}
 
-.about {
-    width: 80%;
+/* ======================================= */
+/* <!--------------about-------------------> */
+
+.about{
+    width: 100%;
     min-height: 100vh;
-    background-color: whitesmoke;
-    margin-left: 20%;
-    padding-left: 4%;
-    padding-top: 1%;
+    padding:20px 10px 10px 17%;
+    background-color: #040b14;
 }
 
-.about h1 span {
-    color: black;
+.about span{
     border-bottom: 2px solid red;
 }
 
-.ah1 {
-    color: black;
-    font-size: 40px;
-}
-
-.ap2 {
-    color: black;
+.ap{
+    margin-top: 20px;
     font-size: 17px;
-    padding: 10px 20px 10px 0;
 }
 
-.aboutflex {
+.aboutbox{
     width: 100%;
-    height: 70vh;
     display: flex;
-    align-items: flex-start;
     justify-content: center;
+    align-items: center;
     margin-top: 20px;
 }
 
-.aboutleft {
+.aboutleft{
     width: 30%;
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
+    text-align: center;
+    padding-top: 6px;
+}
+
+.aboutright{
+    width: 70%;
+}
+
+.aboutleft img{
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    border: 4px solid white;
+    border-radius: 20px;
+}
+
+.aboutright span{
     margin-top: 20px;
 }
 
-.aboutright {
-    width: 70%;
-    background-color: whitesmoke;
-    padding: 4% 10px 10px 10px;
+.aboutright p{
+    margin-top: 10px;
 }
 
-.aboutleft img {
-    width: 280px;
-    height: 380px;
-    object-fit: cover;
-}
-
-.aboutright h1 {
-    color: black;
-}
-
-.aboutright p {
-    color: black;
-    padding: 10px 17px 10px 0;
-}
-
-.aflex {
-    width: 90%;
-    height: 30vh;
+.aflex{
+    width: 100%;
+    margin-top: 15px;
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
+    padding-top: 15px;
 }
 
-table tr td {
-    color: black;
-    height: 7vh;
+table tr td{
+    font-size: 20px;
+    line-height: 45px;
 }
 
 table tr td a{
-    color: black;
-    text-decoration: none;
-}
-
-@media screen and (max-width:2180px) and (min-width:1900px) {
-    .ah1{
-        font-size: 60px;
-    }
-    .ap2{
-        font-size: 25px;
-        margin-top: 10px;
-    }
-    .aboutleft img{
-        width: 450px;
-        height: 470px;
-    }
-    .aboutright{
-        padding-top: 1%;
-    }
-    .aboutright p{
-        font-size: 25px;
-    }
-    .aflex{
-        width: 100%;
-    }
-    table tr td{
-        font-size: 26px;
-    }
-    .aboutflex{
-        height: 57vh;
-    }
-    .about{
-        min-height: 90vh;
-    }
-}
-
-@media screen and (max-width:1900px) and (min-width:1700px) {
-    .ah1{
-        font-size: 60px;
-    }
-    .ap2{
-        font-size: 22px;
-        margin-top: 10px;
-    }
-    .aboutleft{
-        width: 40%;
-    }
-    .aboutleft img{
-        width: 500px;
-        height: 470px;
-    }
-    .aboutright{
-        padding-top: 1%;
-        padding-left: 20px;
-    }
-    .aboutright p{
-        font-size: 22px;
-        margin-left: 7px;
-    }
-    .aflex{
-        width: 100%;
-    }
-    table tr td{
-        font-size: 23px;
-    }
-    .aboutflex{
-        height: 57vh;
-    }
-    .about{
-        min-height: 85vh;
-    }
-    .about h1{
-        font-size:40px;
-        margin-left: 7px;
-    }
-}
-
-@media screen and (max-width:1700px) and (min-width:1500px) {
-    .ah1{
-        font-size: 60px;
-    }
-    .ap2{
-        font-size: 20px;
-        margin-top: 10px;
-    }
-    .aboutleft{
-        width: 40%;
-    }
-    .aboutleft img{
-        width: 450px;
-        height: 470px;
-    }
-    .aboutright{
-        padding-top: 1%;
-        padding-left: 20px;
-    }
-    .aboutright p{
-        font-size: 20px;
-        margin-left: 7px;
-    }
-    .aflex{
-        width: 100%;
-    }
-    table tr td{
-        font-size: 22px;
-    }
-    .aboutflex{
-        height: 57vh;
-    }
-    .about{
-        min-height: 85vh;
-    }
-    .about h1{
-        font-size:40px;
-        margin-left: 7px;
-    }
-}
-
-@media screen and (max-width:1500px) and (min-width:1370px) {
-    .ah1{
-        font-size: 60px;
-    }
-    .ap2{
-        font-size: 20px;
-        margin-top: 10px;
-    }
-    .aboutleft{
-        width: 40%;
-    }
-    .aboutleft img{
-        width: 500px;
-        height: 470px;
-    }
-    .aboutright{
-        padding-top: 1%;
-        padding-left: 20px;
-    }
-    .aboutright p{
-        font-size: 20px;
-        margin-left: 7px;
-    }
-    .aflex{
-        width: 100%;
-    }
-    table tr td{
-        font-size: 20px;
-    }
-    .aboutflex{
-        height: 57vh;
-    }
-    .about{
-        min-height: 85vh;
-    }
-    .about h1{
-        font-size:40px;
-        margin-left: 7px;
-    }
+    color: white;
 }
 
 @media screen and (max-width:980px) and (min-width:700px) {
-    .about {
-        margin-left: 0;
-        width: 100%;
-        min-height: 100vh;
-        padding: 20px;
+    .about{
+        padding-left: 20px;
     }
-
-    .aboutflex {
+    .aboutbox{
         flex-direction: column;
-        padding: 1px;
-        height: 100vh;
-        align-items: center;
     }
-
-    .aboutleft {
+    .ap{
+        font-size: 15px;
+    }
+    .aboutleft{
         width: 100%;
     }
-
-    .aboutright {
-        width: 100%;
-        min-height: 45vh;
-        margin-top: 20px;
+    .aboutleft img{
+        width: 500px;
     }
-
-    .aboutleft img {
-        width: 550px;
-        height: 500px;
+    .aboutright{
+        width: 100%;
+        margin-top: 25px;
+    }
+    table tr td {
+        font-size: 17px;
     }
 }
 
 @media screen and (max-width:700px) and (min-width:500px) {
-    .about {
-        margin-left: 0;
-        width: 100%;
-        min-height: 100vh;
-        padding: 20px;
+    .about{
+        padding-left: 20px;
     }
-
-    .aboutflex {
+    .aboutbox{
         flex-direction: column;
-        padding: 1px;
-        height: 100vh;
-        align-items: center;
     }
-
-    .aboutleft {
+    .ap{
+        font-size: 13px;
+    }
+    .aboutleft{
         width: 100%;
     }
-
-    .aboutright {
-        width: 100%;
-        margin-top: 20px;
+    .aboutleft img{
+        width: 430px;
     }
-
-    .aboutleft img {
-        width: 500px;
-        height: 500px;
+    .aboutright{
+        width: 100%;
+        margin-top: 25px;
+    }
+    .aboutright p{
+        font-size: 15px;
+    }
+    table tr td {
+        font-size: 16px;
     }
 }
 
 @media screen and (max-width:500px) and (min-width:320px) {
-    .about {
-        margin-left: 0;
-        width: 100%;
-        min-height: 100vh;
-        padding: 20px;
+    .about{
+        padding-left: 20px;
     }
-
-    .aboutflex {
+    .aboutbox{
         flex-direction: column;
-        padding: 1px;
-        height: 90vh;
-        align-items: center;
     }
-
-    .aboutleft {
-        width: 100%;
-    }
-
-    .aboutright {
-        width: 100%;
-    }
-
-    .aboutleft img {
-        width: 400px;
-    }
-
-    .aflex {
-        width: 100%;
-        gap: 20px;
-    }
-
-    .ap2 {
-        font-size: 13px;
-        padding-right: 10px;
-    }
-
-    table tr td {
-        font-size: 13px;
-    }
-
-    .aboutright p {
-        font-size: 13px;
-    }
-}
-
-@media screen and (max-width:380px) and (min-width:320px) {
-    table tr td{
+    .ap{
         font-size: 10px;
     }
-}
-
-@media screen and (max-width:350px) and (min-width:320px) {
-    .about{
-        height: 185vh;
+    .aboutleft{
+        width: 100%;
+    }
+    .aboutleft img{
+        width: 280px;
+    }
+    .aboutright{
+        width: 100%;
+        margin-top: 25px;
+    }
+    .aboutright p{
+        font-size: 11px;
+    }
+    table tr td {
+        font-size: 15px;
+    }
+    .aflex{
+        flex-direction: column;
     }
 }
 
-/* ========================== */
-/* <-------skilldiv-----3-----> */
+/* =================================== */
+/* <!------------skill--------------> */
 
-.skill {
-    width: 80%;
-    min-height: 100vh;
-    background-color: whitesmoke;
-    margin-left: 20%;
-    padding: 10px 10px 10px 30px;
-}
-
-.h1 {
-    text-align: center;
-    margin-top: 20px;
-    color: black;
-}
-
-.skildiv {
+.skill{
     width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 0px 20px 0px 30px;
+    min-height: 100vh;
+    background-color: #040b14;
+    padding: 20px 20px 20px 17%;
 }
 
-.skillbox1 {
-    width: 60%;
-    padding: 20px;
-}
-
-.skillbox1 h1 {
-    color: black;
-    margin-bottom: 45px;
-}
-
-.skillbox1 p {
-    color: black;
-    margin-bottom: 20px;
-}
-
-.skillbox2 {
-    width: 40%;
-    height: 85vh;
+.skillflex{
+    width: 100%;
+    /* height: 70vh; */
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
 }
 
-.skillbox2 img {
-    width: 100%;
-    height: 425px;
-    object-fit: cover;
-    border-radius: 2% 20% 2% 20%;
+.skilleft{
+    width: 50%;
+    /* height: 70vh; */
+    text-align: center;
+    padding: 30px;
 }
 
-.sdiv1 {
+.skilright{
+    width: 50%;
+    /* height: 70vh; */
+    padding: 30px;
+    text-align: center;
+}
+
+.skilbox{
     width: 100%;
-    height: 6vh;
-    background-color: white;
-    box-shadow: 2px 2px 4px black;
-    padding: 5px 0 0 0;
-    margin-top: 10px;
-    animation: div 1s linear;
-    animation-timeline: view();
-    animation-range: -10% cover 20%;
+    height: 7vh;
+    background-color: whitesmoke;
     border-radius: 10px;
+    animation: skilbox 1s linear;
+    animation-timeline: view();
+    animation-range: entry -10% cover 30%;
+    margin-top: 20px;
+    position: relative;
 }
 
-@keyframes div {
-    from {
+@keyframes skilbox {
+    from{
         scale: 0.1;
         opacity: 0;
     }
-
-    to {
-        scale: 0.1s;
+    to{
+        scale: 1s;
         opacity: 1;
     }
 }
 
-.sdiv1 h3 {
-    margin-bottom: 6px;
-    margin-left: 10px;
+.skilbox h3{
     color: black;
 }
 
-.txt1 {
-    width: 91%;
-    height: 1vh;
-    background-color: gray;
-    border-bottom-left-radius: 10px;
-    animation: txt1 1s linear;
-    animation-timeline: view();
-    animation-range: 10% cover 30%;
-}
-
-@keyframes txt1 {
-    0% {
-        opacity: 0;
-        width: 0;
-    }
-
-    100% {
-        width: 91%;
-        opacity: 1;
-    }
-}
-
-.txt2 {
-    width: 81%;
-    height: 1vh;
-    background-color: gray;
-    border-bottom-left-radius: 10px;
-    animation: txt1 1s linear;
-    animation-timeline: view();
-    animation-range: 10% cover 30%;
-}
-
-@keyframes txt1 {
-    0% {
-        opacity: 0;
-        width: 0;
-    }
-
-    100% {
-        width: 81%;
-        opacity: 1;
-    }
-}
-
-.txt3 {
-    width: 78%;
-    height: 1vh;
-    background-color: gray;
-    border-bottom-left-radius: 10px;
-    animation: txt1 1s linear;
-    animation-timeline: view();
-    animation-range: 10% cover 30%;
-}
-
-@keyframes txt1 {
-    0% {
-        opacity: 0;
-        width: 0;
-    }
-
-    100% {
-        width: 78%;
-        opacity: 1;
-    }
-}
-
-.txt4 {
+.linebox{
     width: 85%;
     height: 1vh;
-    background-color: gray;
+    background-color: blue;
     border-bottom-left-radius: 10px;
-    animation: txt1 1s linear;
+    animation: linebox 1s linear;
     animation-timeline: view();
-    animation-range: 10% cover 30%;
+    animation-range: entry -10% cover 30%;
+    position: absolute;
+    bottom: 0;
 }
 
-@keyframes txt1 {
-    0% {
-        opacity: 0;
+@keyframes linebox {
+    from{
         width: 0;
+        opacity: 0;
     }
-
-    100% {
+    to{
         width: 85%;
         opacity: 1;
     }
 }
 
-.txt5 {
-    width: 79%;
+.linebox1{
+    width: 82%;
     height: 1vh;
-    background-color: gray;
+    background-color: blue;
     border-bottom-left-radius: 10px;
-    animation: txt1 1s linear;
+    animation: linebox1 1s linear;
     animation-timeline: view();
-    animation-range: 10% cover 30%;
+    animation-range: entry -10% cover 30%;
+    position: absolute;
+    bottom: 0;
 }
 
-@keyframes txt1 {
-    0% {
-        opacity: 0;
+@keyframes linebox1 {
+    from{
         width: 0;
+        opacity: 0;
     }
-
-    100% {
-        width: 79%;
+    to{
+        width: 82%;
         opacity: 1;
     }
 }
 
-.txt6 {
-    width: 87%;
+.linebox2{
+    width: 75%;
     height: 1vh;
-    background-color: gray;
+    background-color: blue;
     border-bottom-left-radius: 10px;
-    animation: txt1 1s linear;
+    animation: linebox2 1s linear;
     animation-timeline: view();
-    animation-range: 10% cover 30%;
+    animation-range: entry -10% cover 30%;
+    position: absolute;
+    bottom: 0;
 }
 
-@keyframes txt1 {
-    0% {
-        opacity: 0;
+@keyframes linebox2 {
+    from{
         width: 0;
+        opacity: 0;
     }
-
-    100% {
-        width: 87%;
+    to{
+        width: 75%;
         opacity: 1;
     }
 }
 
-.txt7 {
-    width: 79%;
+.linebox3{
+    width: 70%;
     height: 1vh;
-    background-color: gray;
+    background-color: blue;
     border-bottom-left-radius: 10px;
-    animation: txt1 1s linear;
+    animation: linebox 1s linear;
     animation-timeline: view();
-    animation-range: 10% cover 20%;
+    animation-range: entry -10% cover 30%;
+    position: absolute;
+    bottom: 0;
 }
 
-@keyframes txt1 {
-    0% {
-        opacity: 0;
+@keyframes linebox3 {
+    from{
         width: 0;
+        opacity: 0;
     }
-
-    100% {
-        width: 79%;
+    to{
+        width: 70%;
         opacity: 1;
     }
 }
 
-@media screen and (max-width:2180px) and (min-width:1900px) {
-    .h1{
-        font-size: 50px;
+.linebox4{
+    width: 75%;
+    height: 1vh;
+    background-color: blue;
+    border-bottom-left-radius: 10px;
+    animation: linebox 1s linear;
+    animation-timeline: view();
+    animation-range: entry -10% cover 30%;
+    position: absolute;
+    bottom: 0;
+}
+
+@keyframes linebox3 {
+    from{
+        width: 0;
+        opacity: 0;
     }
-    .skillbox1 h1{
-        font-size: 50px;
-    }
-    .skillbox2 img{
-        width: 600px;
-        height: 670px;
-    }
-    .sdiv1 h3{
-        font-size: 25px;
-        margin-top: 8px;
+    to{
+        width: 75%;
+        opacity: 1;
     }
 }
 
-@media screen and (max-width:1900px) and (min-width:1700px) {
-    .h1{
-        font-size: 45px;
+.linebox5{
+    width: 77%;
+    height: 1vh;
+    background-color: blue;
+    border-bottom-left-radius: 10px;
+    animation: linebox4 1s linear;
+    animation-timeline: view();
+    animation-range: entry -10% cover 30%;
+    position: absolute;
+    bottom: 0;
+}
+
+@keyframes linebox4 {
+    from{
+        width: 0;
+        opacity: 0;
     }
-    .skillbox1 h1{
-        font-size: 45px;
-    }
-    .skillbox2 img{
-        width: 530px;
-        height: 650px;
-    }
-    .sdiv1 h3{
-        font-size: 25px;
-        margin-top: 8px;
+    to{
+        width: 75%;
+        opacity: 1;
     }
 }
 
-@media screen and (max-width:1700px) and (min-width:1500px) {
-    .h1{
-        font-size: 45px;
-    }
-    .skillbox1 h1{
-        font-size: 45px;
-    }
-    .skillbox2 img{
-        width: 480px;
-        height: 620px;
-        margin-left: 15px;
-    }
-    .sdiv1 h3{
-        font-size: 25px;
-        margin-top: 8px;
-    }
-}
-
-@media screen and (max-width:1500px) and (min-width:1370px) {
-    .h1{
-        font-size: 45px;
-    }
-    .skillbox1 h1{
-        font-size: 45px;
-    }
-    .skillbox2 img{
-        width: 430px;
-        height: 570px;
-        margin-left: 15px;
-        margin-top: 25%;
-    }
-    .sdiv1 h3{
-        font-size: 25px;
-        margin-top: 8px;
-    }
+.skilright img{
+    width: 350px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
 }
 
 @media screen and (max-width:980px) and (min-width:700px) {
-    .skill {
-        width: 100%;
-        margin-left: 0px;
-        padding-left: 20px;
+    .skill{
+        padding-left: 15px;
     }
-
-    .skildiv {
-        padding-left: 10px;
-        flex-direction: column-reverse;
+    .linebox{
+        margin-top: 4px;
     }
-
-    .skillbox1 {
-        width: 100%;
+    .linebox1{
+        margin-top: 4px;
     }
-
-    .skillbox2 {
-        width: 100%;
-        height: 55vh;
+    .linebox2{
+        margin-top: 4px;
     }
-
-    .skillbox2 img {
-        border-radius: 20px;
+    .linebox3{
+        margin-top: 4px;
     }
-
-    .sdiv1 h3 {
-        margin: 10px;
+    .linebox4{
+        margin-top: 4px;
+    }
+    .linebox5{
+        margin-top: 4px;
+    }
+    .skilright img{
+        width: 300px;
+        height: 350px;
+    }
+    .skilleft{
+        padding: 15px;
+    }
+    .skilright {
+        padding: 15px;
     }
 }
 
 @media screen and (max-width:700px) and (min-width:500px) {
-    .skill {
-        width: 100%;
-        margin-left: 0px;
-        padding-left: 20px;
+    .skill{
+        padding-left: 15px;
     }
-
-    .skildiv {
-        padding-left: 10px;
+    .skillflex{
         flex-direction: column-reverse;
     }
-
-    .skillbox1 {
+    .linebox{
+        margin-top: 4px;
+    }
+    .linebox1{
+        margin-top: 4px;
+    }
+    .linebox2{
+        margin-top: 4px;
+    }
+    .linebox3{
+        margin-top: 4px;
+    }
+    .linebox4{
+        margin-top: 4px;
+    }
+    .linebox5{
+        margin-top: 4px;
+    }
+    .skilright img{
+        width: 440px;
+        height: 350px;
+    }
+    .skilleft{
+        padding: 15px;
         width: 100%;
     }
-
-    .skillbox2 {
+    .skilright {
+        padding: 15px;
         width: 100%;
-        height: 55vh;
-    }
-
-    .skillbox2 img {
-        border-radius: 20px;
-    }
-
-    .sdiv1 h3 {
-        margin: 5px 0 6px 10px;
-    }
-    .sdiv1{
-        height: 5vh;
+        margin-top: 20px;
     }
 }
 
 @media screen and (max-width:500px) and (min-width:320px) {
-    .skill {
-        width: 100%;
-        margin-left: 0px;
-        padding-left: 20px;
+    .skill{
+        padding-left: 15px;
     }
-
-    .skildiv {
-        padding: 0px;
+    .skillflex{
         flex-direction: column-reverse;
     }
-
-    .skillbox1 {
+    .linebox{
+        margin-top: 8px;
+    }
+    .linebox1{
+        margin-top: 8px;
+    }
+    .linebox2{
+        margin-top: 8px;
+    }
+    .linebox3{
+        margin-top: 8px;
+    }
+    .linebox4{
+        margin-top: 8px;
+    }
+    .linebox5{
+        margin-top: 8px;
+    }
+    .skilright img{
+        width: 270px;
+    }
+    .skilleft{
+        padding: 15px;
         width: 100%;
-        height: 60vh;
-        padding: 4px;
     }
-
-    .skillbox2 {
+    .skilright {
+        padding: 15px;
         width: 100%;
-        height: 50vh;
-        padding: 0 10px 0 0;
+        margin-top: 20px;
     }
-
-    .skillbox2 img {
-        border-radius: 20px;
+    .skilbox h3{
+        font-size: 16px;
     }
-
-    .sdiv1 h3 {
-        margin-bottom: 1px;
-        margin-top: 10px;
-    }
-    .aboutright h1{
-        font-size: 25px;
-    }
-    .sdiv1{
-        height: 5vh;
-    }
-
 }
 
-/* ========================= */
-/* <!-----projectdiv----4------> */
+/* ==================================== */
+/* <!----------project----------------> */
 
-.project {
-    width: 80%;
-    min-height: 100vh;
-    background-color:#040b14;
-    margin-left: 20%;
-    padding: 20px 20px 20px 40px;
-}
-
-.inputbox {
+.project{
     width: 100%;
-    height: 10vh;
-    margin-top: 10px;
+    min-height: 100vh;
+    background-color: #040b14;
+    padding-left: 17%;
+}
+
+.projectbox{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px;
+    margin-top: 40px;
 }
 
-.inbox {
+.projectbox div{
     width: 80%;
     height: 8vh;
     border: 2px solid violet;
     border-radius: 20px;
     display: flex;
-    align-items: center;
     justify-content: space-around;
-}
-
-.inbox input {
-    display: none;
-}
-
-.h2 {
-    margin-left: 20px;
-    border-bottom: 2px solid red;
-}
-
-.overall {
-    width: 95%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
     align-items: center;
-    padding: 20px;
-    overflow: hidden;
-    margin-left: 3%;
+    margin-bottom: 20px;
 }
 
-.prolable {
+.projectbox div label{
+    font-size: 18px;
+}
+
+.projectlist{
     width: 100%;
-    height: 10vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top:15px;
-}
-
-.prolable span {
-    font-weight: 400;
-    font-size: 20px;
-}
-
-.projectbox {
-    width: 95%;
-    min-height: 100vh;
-    margin-left: 3%;
     display: flex;
     justify-content: center;
     align-items: flex-start;
     position: relative;
     overflow: hidden;
-    padding-top: 20px;
+    margin-top: 20px;
 }
 
-.lableflex {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 70%;
-    height: 7vh;
-    border: 2px solid white;
-    border-radius: 20px;
-}
-
-.projectbox input {
+.projectlist input{
     display: none;
 }
 
-.all {
-    min-width: 100%;
-    min-height: 100vh;
+.all{
+    width: 100%;
+    min-height: 80vh;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
-    gap: 20px;
+    row-gap:30px;
 }
 
-#website:checked~.website {
+.website{
+    width: 100%;
+    position: absolute;
+    left: -210%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #040b14;
+    z-index: 1;
+    transition: 1s;
+    row-gap:30px;
+}
+
+.landing{
+    width: 100%;
+    position: absolute;
+    right: -200%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #040b14;
+    z-index: 2;
+    transition: 1s;
+    row-gap:30px;
+}
+
+.intergrater{
+    width: 100%;
+    position: absolute;
+    bottom: -200%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #040b14;
+    z-index: 3;
+    transition: 1s;
+    row-gap:30px;
+}
+
+#website:checked~.website{
     left: 0;
 }
 
-.website {
-    width: 100%;
-    min-height: 100vh;
-    position: absolute;
-    left: -100%;
-    transition: 1s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    background-color: #040b14;
-}
-
-#webapp:checked~.webapp {
+#landing:checked~.landing{
     right: 0;
 }
-
-.webapp {
-    min-width: 100%;
-    min-height: 100vh;
-    position: absolute;
-    right: -100%;
-    transition: 1s;
-    background-color:#040b14;
-}
-
-#landing:checked~.landing {
+#intergrater:checked~.intergrater{
     bottom: 0;
 }
 
-.landing {
-    width: 100%;
-    min-height: 100vh;
-    position: absolute;
-    bottom: -100%;
-    transition: 1s;
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    background-color: #040b14;
-}
-
-.xtx1 {
-    width: 435px;
-    height: 270px;
-    border: 3px solid white;
-    border-radius: 10px;
-    overflow: hidden;
+.xtx{
+    width: 320px;
+    height: 430px;
     position: relative;
+    overflow: hidden;
+    border-radius: 25px;
+    border: 2px solid;
+    text-align: center;
 }
 
-.xtx1 img {
-    width: 435px;
+.imadiv{
+    width: 270px;
     height: 270px;
-    object-fit: cover;
-    transition: 0.9s;
+    overflow: hidden;
+    margin-left: 22px;
+    margin-top: 20px;
+    border-radius: 10px;
 }
 
-.xtx1:hover.xtx1 img {
+.xtx h2{
+    margin: 10px 0 5px 0;
+}
+
+.xtx img{
+    width: 270px;
+    height: 280px;
+    object-fit: cover;
+    transition: 1s;
+}
+
+.xtx:hover.xtx img{
     scale: 1.1;
 }
 
-.hov {
-    width: 435px;
-    height: 120px;
-    background-color: lightgray;
-    position: absolute;
-    bottom: -50%;
-    transition: 0.9s;
-    padding: 5px 20px 20px 10px;
+.smal{
+    width: 314px;
+    height: 8vh;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 8px;
 }
 
-.hov p{
-    color: black;
-}
-
-.hov h1{
-    text-align: center;
-    color: black;
-    margin-bottom: 15px;
-}
-
-.hov div{
-    text-align: center;
-}
-
-.hov div button a{
+.smal button a{
     text-decoration: none;
+    font-weight: 500;
+    color: white;
 }
 
-.hov div button{
-    width: 110px;
+.smal button{
+    width: 100px;
     height: 5vh;
-    background-color: #033043;
-    border: none;
+    background-color: transparent;
+    border: 2px solid #fff;
     border-radius: 10px;
+    transition: 1s;
 }
 
-.xtx1:hover .hov{
-    bottom: 0%;
+.smal button:hover{
+    transform: translateY(-10px);
 }
 
-@media screen and (max-width:2180px) and (min-width:1900px) {
-    .h2{
-        font-size: 50px;
-        margin-left: 4%;
-    }
-    .prolable span{
-        font-size: 30px;
-    }
-    .xtx1{
-        width: 500px;
-        height: 310px;
-    }
-    .xtx1 img{
-        width: 500px;
-        height: 310px;
-    }
-    .hov{
-        width: 500px;
-        height: 145px;
-        padding-top: 15px;
-    }
-}
-
-@media screen and (max-width:1900px) and (min-width:1700px) {
-    .h2{
-        font-size: 45px;
-        margin-left: 4%;
-    }
-    .prolable span{
-        font-size: 30px;
-    }
-    .xtx1{
-        width: 565px;
-        height: 310px;
-    }
-    .xtx1 img{
-        width: 565px;
-        height: 310px;
-    }
-    .hov{
-        width: 565px;
-        height: 145px;
-        padding-top: 15px;
-    }
-}
-
-@media screen and (max-width:1700px) and (min-width:1500px) {
-    .h2{
-        font-size: 45px;
-        margin-left: 4%;
-    }
-    .prolable span{
-        font-size: 30px;
-    }
-    .xtx1{
-        width: 565px;
-        height: 310px;
-    }
-    .xtx1 img{
-        width: 565px;
-        height: 310px;
-    }
-    .hov{
-        width: 565px;
-        height: 145px;
-        padding-top: 15px;
-    }
-}
-
-@media screen and (max-width:1500px) and (min-width:1370px) {
-    .hov{
-        height: 130px;
-    }
-}
-
-@media screen and (max-width:980px) and (min-width:860px) {
+@media screen and (max-width:980px) and (min-width:700px) {
     .project{
-        width: 100%;
-        margin: 0;
         padding-left: 20px;
-    }
-    .projectbox{
-        width: 100%;
-        margin: 0;
-    }
-    .xtx1{
-        width: 400px;
-        height: 245px;
-    }
-}
-
-@media screen and (max-width:860px) and (min-width:700px) {
-    .project{
-        width: 100%;
-        margin: 0;
-        padding-left: 20px;
-    }
-    .projectbox{
-        width: 100%;
-        margin: 0;
-    }
-    .xtx1{
-        width: 320px;
-        height: 210px;
-    }
-    .hov{
-        width: 320px;
-        bottom: -60%;
-    }
-    .xtx1 img{
-        width: 320px;
-        height: 210px;
-        object-fit: cover;
     }
 }
 
 @media screen and (max-width:700px) and (min-width:500px) {
     .project{
-        width: 100%;
-        margin: 0;
-        padding-left: 20px;
+        padding-left: 15px;
     }
-    .projectbox{
-        width: 100%;
-        margin: 0;
+}
+
+@media screen and (max-width:500px) and (min-width:400px) {
+    .project{
+        padding-left: 10px;
     }
-    .xtx1{
-        width: 430px;
-        height: 210px;
+    .xtx{
+        width: 350px;
     }
-    .hov{
-        width: 430px;
-        bottom: -60%;
+    .xtx img{
+        width: 300px;
     }
-    .xtx1 img{
-        width: 430px;
-        height: 210px;
-        object-fit: cover;
+    .smal{
+        width: 345px;
     }
-    .lableflex{
+    .projectbox div {
+        width: 95%;
+    }
+    .projectbox div label{
+        font-size: 15px;
+    }
+    .imadiv{
+        width: 270px;
+        margin-left: 11%;
+    }
+}
+
+@media screen and (max-width:400px) and (min-width:320px) {
+    .project{
+        padding-left: 10px;
+    }
+    .xtx{
+        width: 290px;
+    }
+    .imadiv{
+        width: 240px;
+    }
+    .xtx img{
+        width: 240px;
+    }
+    .smal{
+        width: 290px;
+    }
+    .projectbox div {
         width: 90%;
     }
-}
-
-@media screen and (max-width:500px) and (min-width:320px) {
-    .project{
-        width: 100%;
-        margin: 0;
-        padding-left: 20px;
-    }
-    .projectbox{
-        width: 100%;
-        margin: 0;
-    }
-    .xtx1{
-        width: 320px;
-        height: 210px;
-    }
-    .hov{
-        width: 320px;
-        bottom: -60%;
-    }
-    .xtx1 img{
-        width: 320px;
-        height: 210px;
-        object-fit: cover;
-    }
-    .lableflex{
-        width:95%;
-        height: 5vh;
-    }
-    .prolable span{
-        font-size: 14px;
+    .projectbox div label{
+        font-size: 12px;
     }
 }
 
-/* =========================================== */
-/* <!----------------contactdiv----------------> */
+/* =================================== */
+/* <!--------------contact-------------> */
 
 .contact{
-    width: 80%;
-    height: 100vh;
-    margin-left: 20%;
+    width: 100%;
+    min-height: 100vh;
     background-color: #040b14;
-    position: relative;
-    padding-top: 7%;
+    padding: 40px 0px 0px 17%;
 }
 
-.contact p{
-    text-align: center;
-    font-size: 20px;
-}
-
-.contact h1{
-    text-align: center;
-    font-size: 45px;
-    margin-top: 15px;
-}
-
-.email{
+.contactbox{
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 50px;
 }
 
-.emailflex {
-    width: 50%;
-    height: 7vh;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 5%;
-    border: 2px solid white;
-    border-radius: 20px;
+.contactleft{
+    width: 350px;
+    min-height: 500px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px 0 0 20px;
+    position: relative;
 }
 
-.svgdiv{
-    width: 100%;
+.contactleft div{
+    width: 50px;
+    height: 50px;
+    background-color: white;
     position: absolute;
-    bottom: -4px;
+    right: -5px;
+    top: 93px;
+    transform: rotate(45deg);
+}
+
+.contactleft hr{
+    border: 1px solid gray;
+    margin-top: 28px;
+}
+
+.contactleft img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.contactleft h2{
+    color: black;
+}
+
+.contactleft h4{
+    color: black;
+}
+
+.contactleft i{
+    font-size: 25px;
+    margin-right: 10px;
+    margin-top: 15px;
+}
+
+.contactleft i:hover{
+    color: red;
+}
+
+.contactmobil{
+    width: 350px;
+    min-height: 500px;
+    border:2px solid white;
+    border-radius: 0 20px 20px 0;
+    padding: 15px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    width: 315px;
+    margin-top: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form div input {
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    outline: none;
+    border: 2px solid #c4c4c4;
+    padding: 0 30px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    color: black;
+}
+
+textarea{
+    width: 100%;
+    height: 20vh;
+    color: black;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+#password{
+    height: 20vh;
+    padding: 10px;
+}
+
+form div {
+    position: relative;
+    margin-bottom: 5px;
+}
+
+input:focus {
+    border: 2px solid #f2796e;
+}
+
+form div i {
+    position: absolute;
+    padding: 10px;
+    color: black;
+}
+
+.failure-icon,
+.error {
+    color: red;
+}
+
+.success-icon {
+    color: green;
+}
+
+.error {
+    font-size: 14.5px;
+    margin-top: 5px;
+}
+
+.success-icon,
+.failure-icon {
+    right: 0;
+    opacity: 0;
+}
+
+form button {
+    margin-top: 15px;
+    width: 100%;
+    height: 45px;
+    background-color: #f2796e;
+    border: 2px solid #f2796e;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.1s ease;
+}
+
+button:hover {
+    opacity: 0.8;
 }
 
 .path-0 {
@@ -1682,64 +1146,66 @@ table tr td a{
 
 @keyframes pathAnim-0 {
     0% {
-        d: path("M 0,400 L 0,150 C 92.00956937799043,189.99043062200957 184.01913875598086,229.9808612440191 287,218 C 389.98086124401914,206.0191387559809 503.93301435406704,142.06698564593302 591,113 C 678.066985645933,83.93301435406698 738.2488038277512,89.75119617224881 829,95 C 919.7511961722488,100.24880382775119 1041.0717703349283,104.92822966507177 1148,114 C 1254.9282296650717,123.07177033492823 1347.4641148325359,136.53588516746413 1440,150 L 1440,400 L 0,400 Z");
+        d: path("M 0,500 L 0,187 C 99.39285714285714,180.75 198.78571428571428,174.5 318,172 C 437.2142857142857,169.5 576.2500000000001,170.75 704,193 C 831.7499999999999,215.25 948.2142857142858,258.5 1069,261 C 1189.7857142857142,263.5 1314.892857142857,225.25 1440,187 L 1440,500 L 0,500 Z");
     }
 
     25% {
-        d: path("M 0,400 L 0,150 C 83.87559808612443,122.96650717703349 167.75119617224885,95.933014354067 269,87 C 370.24880382775115,78.066985645933 488.87081339712915,87.23444976076554 578,89 C 667.1291866028708,90.76555023923446 726.7655502392345,85.12918660287083 812,100 C 897.2344497607655,114.87081339712917 1008.0669856459331,150.2488038277512 1117,162 C 1225.933014354067,173.7511961722488 1332.9665071770335,161.8755980861244 1440,150 L 1440,400 L 0,400 Z");
+        d: path("M 0,500 L 0,187 C 127.82142857142861,165.03571428571428 255.64285714285722,143.07142857142858 370,164 C 484.3571428571428,184.92857142857142 585.2499999999998,248.75 716,244 C 846.7500000000002,239.25 1007.3571428571429,165.92857142857144 1133,145 C 1258.642857142857,124.07142857142857 1349.3214285714284,155.53571428571428 1440,187 L 1440,500 L 0,500 Z");
     }
 
     50% {
-        d: path("M 0,400 L 0,150 C 65.63636363636365,107.73205741626793 131.2727272727273,65.46411483253588 237,75 C 342.7272727272727,84.53588516746412 488.5454545454546,145.8755980861244 589,165 C 689.4545454545454,184.1244019138756 744.5454545454545,161.0334928229665 834,135 C 923.4545454545455,108.96650717703349 1047.2727272727275,79.99043062200957 1154,82 C 1260.7272727272725,84.00956937799043 1350.3636363636363,117.00478468899522 1440,150 L 1440,400 L 0,400 Z");
+        d: path("M 0,500 L 0,187 C 158.57142857142856,188.46428571428572 317.1428571428571,189.92857142857142 418,208 C 518.8571428571429,226.07142857142858 562,260.75 661,250 C 760,239.25 914.8571428571429,183.07142857142858 1054,165 C 1193.142857142857,146.92857142857142 1316.5714285714284,166.96428571428572 1440,187 L 1440,500 L 0,500 Z");
     }
 
     75% {
-        d: path("M 0,400 L 0,150 C 90.85167464114832,182.99521531100478 181.70334928229664,215.99043062200957 264,195 C 346.29665071770336,174.00956937799043 420.0382775119617,99.03349282296652 522,100 C 623.9617224880383,100.96650717703348 754.1435406698565,177.8755980861244 850,178 C 945.8564593301435,178.1244019138756 1007.3875598086124,101.46411483253588 1100,84 C 1192.6124401913876,66.53588516746412 1316.3062200956938,108.26794258373207 1440,150 L 1440,400 L 0,400 Z");
+        d: path("M 0,500 L 0,187 C 96.53571428571428,147.35714285714286 193.07142857142856,107.71428571428571 315,97 C 436.92857142857144,86.28571428571429 584.2499999999999,104.5 709,124 C 833.7500000000001,143.5 935.9285714285716,164.28571428571428 1054,175 C 1172.0714285714284,185.71428571428572 1306.0357142857142,186.35714285714286 1440,187 L 1440,500 L 0,500 Z");
     }
 
     100% {
-        d: path("M 0,400 L 0,150 C 92.00956937799043,189.99043062200957 184.01913875598086,229.9808612440191 287,218 C 389.98086124401914,206.0191387559809 503.93301435406704,142.06698564593302 591,113 C 678.066985645933,83.93301435406698 738.2488038277512,89.75119617224881 829,95 C 919.7511961722488,100.24880382775119 1041.0717703349283,104.92822966507177 1148,114 C 1254.9282296650717,123.07177033492823 1347.4641148325359,136.53588516746413 1440,150 L 1440,400 L 0,400 Z");
+        d: path("M 0,500 L 0,187 C 99.39285714285714,180.75 198.78571428571428,174.5 318,172 C 437.2142857142857,169.5 576.2500000000001,170.75 704,193 C 831.7499999999999,215.25 948.2142857142858,258.5 1069,261 C 1189.7857142857142,263.5 1314.892857142857,225.25 1440,187 L 1440,500 L 0,500 Z");
     }
 }
 
 @media screen and (max-width:980px) and (min-width:700px) {
     .contact{
-        width: 100%;
-        margin: 0;
-        padding-top: 30%;
+        padding-left: 10px;
     }
-    .emailflex{
-        width: 70%;
+    .contactleft{
+        display: none;
+    }
+    .contactmobil{
+        border-radius: 20px;
     }
 }
 
 @media screen and (max-width:700px) and (min-width:500px) {
     .contact{
-        width: 100%;
-        height: 60vh;
-        margin: 0;
-        padding-top: 35%;
+        padding-left: 10px;
     }
-    .emailflex{
-        width: 80%;
+    .contactleft{
+        display: none;
+    }
+    .contactmobil{
+        border-radius: 20px;
+        
     }
 }
 
 @media screen and (max-width:500px) and (min-width:320px) {
     .contact{
-        width: 100%;
-        margin: 0;
-        padding-top: 50%;
+        padding-left: 10px;
     }
-    .emailflex{
-        width: 80%;
-        padding: 10px;
-        height: 6vh;
+    .contactleft{
+        display: none;
     }
-    .contact p{
-        font-size: 14px;
+    .contactmobil{
+        border-radius: 20px;
+        width: 300px;
     }
-    .contact h1{
-        font-size: 35px;
+    form{
+        width: 270px;
+    }
+    .path-0{
+        display: none;   
     }
 }
