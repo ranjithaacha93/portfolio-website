@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> My PortFolio </title>
     <link rel="stylesheet" href="./stylesheet.css" type="text/css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -53,8 +54,11 @@
 
     <div class="home">
         <div class="homewhite">
-            <h2> Hello! </h2>
-            <h1> I am S.Ranjith <br> <span> Front-end Developer </span> </h1>
+            <h2  data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500"> Hello! </h2>
+            <h1  data-aos="fade-up"
+            data-aos-duration="3000"> I am S.Ranjith <br> <span> Front-end Developer </span> </h1>
             <i class="fa-brands fa-linkedin-in" style="color: #ffffff;"></i>
             <i class="fa-brands fa-github" style="color: #ffffff;"></i>
             <i class="fa-brands fa-x-twitter" style="color: #ffffff;"></i>
@@ -75,7 +79,8 @@
             user experiences.</p>
         <div class="aboutbox">
             <div class="aboutleft">
-                <img src="./images/aacha.JPG" alt="">
+                <img  data-aos="fade-up"
+                data-aos-duration="3000" src="./images/aacha.JPG" alt="">
             </div>
             <div class="aboutright">
                 <h2> <span>Front-end Developer</span></h2>
@@ -128,7 +133,7 @@
         <h1> Skills </h1>
         <div class="skillflex">
             <div class="skilleft">
-                <div class="skilbox">
+                <div data-aos="zoom-in-right" class="skilbox">
                     <div
                         style="display: flex;justify-content: space-between; align-items: center;padding-left:10px;padding-right:10px;padding-top:5px">
                         <h3> <i class="fa-brands fa-html5" style="color: #ffa200;"></i> HTML </h3>
@@ -136,7 +141,7 @@
                     </div>
                     <div class="linebox"> </div>
                 </div>
-                <div class="skilbox">
+                <div data-aos="zoom-in-right" class="skilbox">
                     <div
                         style="display: flex;justify-content: space-between; align-items: center;padding-left:10px;padding-right:10px;padding-top:5px">
                         <h3> <i class="fa-brands fa-css3-alt" style="color: #004dd1;"></i> CSS </h3>
@@ -144,7 +149,7 @@
                     </div>
                     <div class="linebox1"> </div>
                 </div>
-                <div class="skilbox">
+                <div data-aos="zoom-in-right" class="skilbox">
                     <div
                         style="display: flex;justify-content: space-between; align-items: center;padding-left:10px;padding-right:10px;padding-top:5px">
                         <h3> <i class="fa-brands fa-bootstrap" style="color: #ee00ff;"></i> BOOTSTRAP </h3>
@@ -152,7 +157,7 @@
                     </div>
                     <div class="linebox2"> </div>
                 </div>
-                <div class="skilbox">
+                <div data-aos="zoom-in-right" class="skilbox">
                     <div
                         style="display: flex;justify-content: space-between; align-items: center;padding-left:10px;padding-right:10px;padding-top:5px">
                         <h3> <i class="fa-brands fa-js" style="color: #FFD43B;"></i> JAVASCRIPT </h3>
@@ -160,7 +165,7 @@
                     </div>
                     <div class="linebox3"> </div>
                 </div>
-                <div class="skilbox">
+                <div data-aos="zoom-in-right" class="skilbox">
                     <div
                         style="display: flex;justify-content: space-between; align-items: center;padding-left:10px;padding-right:10px;padding-top:5px">
                         <h3> <i class="fa-brands fa-react" style="color: #00ffee;"></i> REACT . JS </h3>
@@ -168,7 +173,7 @@
                     </div>
                     <div class="linebox4"> </div>
                 </div>
-                <div class="skilbox">
+                <div data-aos="zoom-in-right" class="skilbox">
                     <div
                         style="display: flex;justify-content: space-between; align-items: center;padding-left:10px;padding-right:10px;padding-top:5px">
                         <h3> <i class="fa-solid fa-laptop-code" style="color: #63E6BE;"></i> My SQL </h3>
@@ -178,7 +183,10 @@
                 </div>
             </div>
             <div class="skilright">
-                <img src="https://images.unsplash.com/photo-1587620962725-abab7fe55159?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZGV2ZWxvcGVyfGVufDB8fDB8fHww"
+                <img  data-aos="fade-left"
+                data-aos-anchor="#example-anchor"
+                data-aos-offset="500"
+                data-aos-duration="500" src="https://images.unsplash.com/photo-1587620962725-abab7fe55159?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZGV2ZWxvcGVyfGVufDB8fDB8fHww"
                     alt="developer img">
             </div>
         </div>
@@ -199,7 +207,8 @@
         </div>
         <div class="projectlist">
             <div class="all">
-                <div class="xtx">
+                <div data-aos="fade-up"
+                data-aos-duration="1000" class="xtx">
                     <div class="imadiv">
                         <img src="./images/furi.jpeg" alt="furi">
                     </div>
@@ -210,7 +219,32 @@
                         <button> <a href="#"> Code </a> </button>
                     </div>
                 </div>
-                <div class="xtx">
+                <div  data-aos="fade-up"
+                data-aos-duration="1000" class="xtx">
+                    <div class="imadiv">
+                        <img src="./images/code.jpeg" alt="furi">
+                    </div>
+                    <h2> Furunicher </h2>
+                    <p> HTML , CSS</p>
+                    <div class="smal">
+                        <button> <a href="#"> Live </a> </button>
+                        <button> <a href="#"> Code </a> </button>
+                    </div>
+                </div>
+                <div  data-aos="fade-up"
+                data-aos-duration="1000" class="xtx">
+                    <div class="imadiv">
+                        <img src="./images/Annotation 2024-08-15 205501.png" alt="furi">
+                    </div>
+                    <h2> Furunicher </h2>
+                    <p> HTML , CSS</p>
+                    <div class="smal">
+                        <button> <a href="#"> Live </a> </button>
+                        <button> <a href="#"> Code </a> </button>
+                    </div>
+                </div>
+                <div  data-aos="fade-up"
+                data-aos-duration="1000" class="xtx">
                     <div class="imadiv">
                         <img src="./images/furi.jpeg" alt="furi">
                     </div>
@@ -221,7 +255,8 @@
                         <button> <a href="#"> Code </a> </button>
                     </div>
                 </div>
-                <div class="xtx">
+                <div  data-aos="fade-up"
+                data-aos-duration="1000" class="xtx">
                     <div class="imadiv">
                         <img src="./images/furi.jpeg" alt="furi">
                     </div>
@@ -232,29 +267,8 @@
                         <button> <a href="#"> Code </a> </button>
                     </div>
                 </div>
-                <div class="xtx">
-                    <div class="imadiv">
-                        <img src="./images/furi.jpeg" alt="furi">
-                    </div>
-                    <h2> Furunicher </h2>
-                    <p> HTML , CSS</p>
-                    <div class="smal">
-                        <button> <a href="#"> Live </a> </button>
-                        <button> <a href="#"> Code </a> </button>
-                    </div>
-                </div>
-                <div class="xtx">
-                    <div class="imadiv">
-                        <img src="./images/furi.jpeg" alt="furi">
-                    </div>
-                    <h2> Furunicher </h2>
-                    <p> HTML , CSS</p>
-                    <div class="smal">
-                        <button> <a href="#"> Live </a> </button>
-                        <button> <a href="#"> Code </a> </button>
-                    </div>
-                </div>
-                <div class="xtx">
+                <div  data-aos="fade-up"
+                data-aos-duration="1000" class="xtx">
                     <div class="imadiv">
                         <img src="./images/furi.jpeg" alt="furi">
                     </div>
@@ -271,7 +285,8 @@
 
             <input type="checkbox" name="" id="website">
             <div class="website">
-                <div class="xtx">
+                <div  data-aos="fade-up"
+                data-aos-duration="1000" class="xtx">
                     <div class="imadiv">
                         <img src="./images/furi.jpeg" alt="furi">
                     </div>
@@ -282,7 +297,8 @@
                         <button> <a href="#"> Code </a> </button>
                     </div>
                 </div>
-                <div class="xtx">
+                <div  data-aos="fade-up"
+                data-aos-duration="1000" class="xtx">
                     <div class="imadiv">
                         <img src="./images/furi.jpeg" alt="furi">
                     </div>
@@ -293,7 +309,8 @@
                         <button> <a href="#"> Code </a> </button>
                     </div>
                 </div>
-                <div class="xtx">
+                <div  data-aos="fade-up"
+                data-aos-duration="1000" class="xtx">
                     <div class="imadiv">
                         <img src="./images/furi.jpeg" alt="furi">
                     </div>
@@ -304,7 +321,8 @@
                         <button> <a href="#"> Code </a> </button>
                     </div>
                 </div>
-                <div class="xtx">
+                <div  data-aos="fade-up"
+                data-aos-duration="1000" class="xtx">
                     <div class="imadiv">
                         <img src="./images/furi.jpeg" alt="furi">
                     </div>
@@ -315,7 +333,8 @@
                         <button> <a href="#"> Code </a> </button>
                     </div>
                 </div>
-                <div class="xtx">
+                <div  data-aos="fade-up"
+                data-aos-duration="1000" class="xtx">
                     <div class="imadiv">
                         <img src="./images/furi.jpeg" alt="furi">
                     </div>
@@ -332,7 +351,8 @@
 
             <input type="checkbox" name="" id="landing">
             <div class="landing">
-                <div class="xtx">
+                <div  data-aos="fade-up"
+                data-aos-duration="1000" class="xtx">
                     <div class="imadiv">
                         <img src="./images/furi.jpeg" alt="furi">
                     </div>
@@ -343,7 +363,8 @@
                         <button> <a href="#"> Code </a> </button>
                     </div>
                 </div>
-                <div class="xtx">
+                <div  data-aos="fade-up"
+                data-aos-duration="1000" class="xtx">
                     <div class="imadiv">
                         <img src="./images/furi.jpeg" alt="furi">
                     </div>
@@ -354,7 +375,8 @@
                         <button> <a href="#"> Code </a> </button>
                     </div>
                 </div>
-                <div class="xtx">
+                <div  data-aos="fade-up"
+                data-aos-duration="1000" class="xtx">
                     <div class="imadiv">
                         <img src="./images/furi.jpeg" alt="furi">
                     </div>
@@ -365,7 +387,8 @@
                         <button> <a href="#"> Code </a> </button>
                     </div>
                 </div>
-                <div class="xtx">
+                <div  data-aos="fade-up"
+                data-aos-duration="1000" class="xtx">
                     <div class="imadiv">
                         <img src="./images/furi.jpeg" alt="furi">
                     </div>
@@ -382,7 +405,8 @@
 
             <input type="checkbox" name="" id="intergrater">
             <div class="intergrater">
-                <div class="xtx">
+                <div  data-aos="fade-up"
+                data-aos-duration="1000" class="xtx">
                     <div class="imadiv">
                         <img src="./images/furi.jpeg" alt="furi">
                     </div>
@@ -393,7 +417,8 @@
                         <button> <a href="#"> Code </a> </button>
                     </div>
                 </div>
-                <div class="xtx">
+                <div  data-aos="fade-up"
+                data-aos-duration="1000" class="xtx">
                     <div class="imadiv">
                         <img src="./images/furi.jpeg" alt="furi">
                     </div>
@@ -404,7 +429,8 @@
                         <button> <a href="#"> Code </a> </button>
                     </div>
                 </div>
-                <div class="xtx">
+                <div  data-aos="fade-up"
+                data-aos-duration="1000" class="xtx">
                     <div class="imadiv">
                         <img src="./images/furi.jpeg" alt="furi">
                     </div>
@@ -415,7 +441,8 @@
                         <button> <a href="#"> Code </a> </button>
                     </div>
                 </div>
-                <div class="xtx">
+                <div  data-aos="fade-up"
+                data-aos-duration="1000" class="xtx">
                     <div class="imadiv">
                         <img src="./images/furi.jpeg" alt="furi">
                     </div>
@@ -426,7 +453,8 @@
                         <button> <a href="#"> Code </a> </button>
                     </div>
                 </div>
-                <div class="xtx">
+                <div  data-aos="fade-up"
+                data-aos-duration="1000" class="xtx">
                     <div class="imadiv">
                         <img src="./images/furi.jpeg" alt="furi">
                     </div>
@@ -437,7 +465,8 @@
                         <button> <a href="#"> Code </a> </button>
                     </div>
                 </div>
-                <div class="xtx">
+                <div  data-aos="fade-up"
+                data-aos-duration="1000" class="xtx">
                     <div class="imadiv">
                         <img src="./images/furi.jpeg" alt="furi">
                     </div>
@@ -532,6 +561,10 @@
         </svg>
     </div>
     <script src="./index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>

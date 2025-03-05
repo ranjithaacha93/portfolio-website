@@ -137,7 +137,7 @@
 .homewhite{
     width: 100%;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.582);
+    background-color: rgba(0, 0, 0, 0.623);
     padding-left: 20%;
     padding-top: 1px;
 }
@@ -464,7 +464,6 @@ table tr td a{
 
 @keyframes skilbox {
     from{
-        scale: 0.1;
         opacity: 0;
     }
     to{
@@ -855,6 +854,7 @@ table tr td a{
     border-radius: 25px;
     border: 2px solid;
     text-align: center;
+    transition: 0.9s;
 }
 
 .imadiv{
@@ -1033,10 +1033,6 @@ table tr td a{
     font-size: 25px;
     margin-right: 10px;
     margin-top: 15px;
-}
-
-.contactleft i:hover{
-    color: red;
 }
 
 .contactmobil{
