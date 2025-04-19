@@ -61,8 +61,8 @@
 }
 
 .box:hover.box i{
-    background-color: black;
-    color: red;
+    background-color: white;
+    color: lightseagreen;
 }
 
 .box h2{
@@ -280,6 +280,7 @@
 .ap{
     margin-top: 20px;
     font-size: 17px;
+    line-height: 30px;
 }
 
 .aboutbox{
